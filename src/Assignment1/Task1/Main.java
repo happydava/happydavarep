@@ -1,3 +1,5 @@
+package Assignment1.Task1;
+
 public class Main {
     public static void main(String[] args) {
     Person person = new Person("David", "Khamitskiy", 18, true );

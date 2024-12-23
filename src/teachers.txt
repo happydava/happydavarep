@@ -1,0 +1,5 @@
+Nursultan Khaimuldin 39 Male Object-Oriented-Programming 25 500000
+Adilet Duman 36 Male Discrete-Mathematics 15 4000000
+Madi Raikhan 40 Male Calculus 30 450000
+Maral Zhanarstanova 38 Female Politologia 9 350000
+Askar Khaimuldin 37 Male Introduction-To-Programming 20 435000

@@ -11,7 +11,6 @@ public class School {
         this.members = new ArrayList<>();
     }
 
-    // Метод для добавления члена в школу
     public void addMember(Person member) {
         if (member != null) {
             members.add(member);
@@ -19,12 +18,10 @@ public class School {
         }
     }
 
-    // Метод для сортировки членов школы по фамилии
     public void sortMembersBySurname() {
         members.sort(Comparator.comparing(Person::getSurname));
     }
 
-    // Метод для вывода студентов в школе
     public void displayStudents() {
         System.out.println("Students in School:");
         for (Person member : members) {
@@ -34,7 +31,6 @@ public class School {
         }
     }
 
-    // Метод для вывода учителей в школе
     public void displayTeachers() {
         System.out.println("Teachers in School:");
         for (Person member : members) {
@@ -44,7 +40,6 @@ public class School {
         }
     }
 
-    // Переопределённый toString для вывода всех членов школы
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("School Members:\n");

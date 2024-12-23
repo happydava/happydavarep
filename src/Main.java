@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         School school = new School();
 
-        // Чтение студентов
+
         try {
             File studentFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\students.txt"); // Убедитесь, что файл находится в корневой папке проекта
             Scanner studentScanner = new Scanner(studentFile);
@@ -24,19 +24,16 @@ public class Main {
 
                 String[] data = line.split(" ");
 
-                // Парсинг данных
                 String name = data[0];
                 String surname = data[1];
                 int age = Integer.parseInt(data[2]);
                 boolean gender = data[3].equalsIgnoreCase("Male");
                 Student student = new Student(name, surname, age, gender);
 
-                // Добавление оценок
                 for (int i = 4; i < data.length; i++) {
                     student.addGrade(Integer.parseInt(data[i]));
                 }
 
-                // Добавление в школу
                 school.addMember(student);
             }
             studentScanner.close();
@@ -44,7 +41,6 @@ public class Main {
             System.out.println("Error reading students file: " + e.getMessage());
         }
 
-        // Чтение учителей
         try {
             File teacherFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\teachers.txt"); // Убедитесь, что файл находится в корневой папке проекта
             Scanner teacherScanner = new Scanner(teacherFile);
@@ -62,12 +58,10 @@ public class Main {
 
                 Teacher teacher = new Teacher(name, surname, age, gender, subject, yearsOfExperience, salary);
 
-                // Увеличение зарплаты, если опыт > 10 лет
                 if (yearsOfExperience > 10) {
                     teacher.giveRaise(10);
                 }
 
-                // Добавление в школу
                 school.addMember(teacher);
             }
             teacherScanner.close();
@@ -75,10 +69,8 @@ public class Main {
             System.out.println("Error reading teachers file: " + e.getMessage());
         }
 
-        // Сортировка членов школы по фамилии
         school.sortMembersBySurname();
 
-        // Вывод всех членов школы
         System.out.println(school);
     }
 }

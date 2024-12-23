@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class School {
-    private List<Person> members; // Список всех членов школы (студенты и учителя)
+    private List<Person> members;
 
     public School() {
         this.members = new ArrayList<>();
@@ -25,7 +25,7 @@ public class School {
     public void displayStudents() {
         System.out.println("Students in School:");
         for (Person member : members) {
-            if (member instanceof Student) { // Проверка, является ли объект студентом
+            if (member instanceof Student) {
                 System.out.println(member);
             }
         }
@@ -34,7 +34,7 @@ public class School {
     public void displayTeachers() {
         System.out.println("Teachers in School:");
         for (Person member : members) {
-            if (member instanceof Teacher) { // Проверка, является ли объект учителем
+            if (member instanceof Teacher) {
                 System.out.println(member);
             }
         }

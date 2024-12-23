@@ -12,7 +12,7 @@ public class Main {
 
 
         try {
-            File studentFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\students.txt"); // Убедитесь, что файл находится в корневой папке проекта
+            File studentFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\students.txt");
             Scanner studentScanner = new Scanner(studentFile);
 
             while (studentScanner.hasNextLine()) {
@@ -42,7 +42,7 @@ public class Main {
         }
 
         try {
-            File teacherFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\teachers.txt"); // Убедитесь, что файл находится в корневой папке проекта
+            File teacherFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\teachers.txt");
             Scanner teacherScanner = new Scanner(teacherFile);
 
             while (teacherScanner.hasNextLine()) {

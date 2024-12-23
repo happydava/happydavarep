@@ -13,9 +13,27 @@ public class Person {
         this.gender = gender;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
     @Override
     public String toString() {
         String genderString = gender ? "Male" : "Female";
         return "I'm " + name + " " + surname + ", " + age + " years old. Gender is " + genderString + ".";
     }
 }
+
+

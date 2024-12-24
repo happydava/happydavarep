@@ -42,6 +42,7 @@ public class School {
 
     @Override
     public String toString() {
+        System.out.println("_______________________________________SCHOOL LIST_______________________________________");
         StringBuilder sb = new StringBuilder("School Members:\n");
         for (Person member : members) {
             sb.append(member.toString()).append("\n");

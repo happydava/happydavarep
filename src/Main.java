@@ -9,8 +9,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         School school = new School();
-
-
         try {
             File studentFile = new File("C:\\Users\\Давид\\IdeaProjects\\untitled5\\src\\students.txt");
             Scanner studentScanner = new Scanner(studentFile);
@@ -70,7 +68,8 @@ public class Main {
         }
 
         school.sortMembersBySurname();
-
         System.out.println(school);
+
+
     }
 }

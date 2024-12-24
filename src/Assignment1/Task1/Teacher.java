@@ -15,6 +15,7 @@ public class Teacher extends Person {
     public void giveRaise(double percentage) {
         if (percentage > 0) {
             salary += salary * (percentage / 100);
+            System.out.println("_____________________________________________________TEACHERS_____________________________________________________");
             System.out.println("Salary of " + getName() +  " increased by " + percentage + "%. New salary: " + salary);
         } else {
             System.out.println("Percentage must be positive.");

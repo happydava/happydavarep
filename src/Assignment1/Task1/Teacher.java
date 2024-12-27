@@ -30,11 +30,9 @@ public class Teacher extends Person {
     public String getSubject() {
         return subject;
     }
-
     public int getYearsOfExperience() {
         return yearsOfExperience;
     }
-
     public double getSalary() {
         return salary;
     }

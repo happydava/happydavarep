@@ -6,11 +6,17 @@ public class Person {
     private int age;
     private boolean gender;
 
+    private static int idCounter = 1;
+
     public Person(String name, String surname, int age, boolean gender) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.gender = gender;
+    }
+
+    public static int getNextID() {
+        return idCounter++;
     }
 
     public String getName() {
@@ -35,5 +41,3 @@ public class Person {
         return "I'm " + name + " " + surname + ", " + age + " years old. Gender is " + genderString + ".";
     }
 }
-
-

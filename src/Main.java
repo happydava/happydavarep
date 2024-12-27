@@ -36,7 +36,7 @@ public class Main {
             }
             studentScanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Error reading students file: " + e.getMessage());
+            System.out.println("Error " + e.getMessage());
         }
 
         try {
@@ -64,7 +64,7 @@ public class Main {
             }
             teacherScanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Error reading teachers file: " + e.getMessage());
+            System.out.println("Error  " + e.getMessage());
         }
 
         school.sortMembersBySurname();
